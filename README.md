@@ -8,7 +8,7 @@ This script uses Python 3, as well as [`netCDF4-python`](https://unidata.github.
 
 ## Usage
 
-To use the script, first `git checkout` this repository and download the specific netCDF files [here](https://umd.app.box.com/s/5102vf5ynh6o0fztph2jq6dt8alt795k).
+To use the script, first `git clone` this repository and download the specific netCDF files [here](https://umd.app.box.com/s/5102vf5ynh6o0fztph2jq6dt8alt795k).
 
 After unpacking the files, move them to the `ncdata` folder, then run `netcdfconvert.py`. This will convert the first of five files. To convert the rest, find the following lines in the file:
 
@@ -24,4 +24,4 @@ and uncomment them one at a time for each file.
 
 While the script is running, it will prompt you to pick whether you want to convert it to .csv or .tsv, and will ask whether or not you want to add a row with the data labels. To use the output file with the online TensorBoard Embedding Projector, type "tsv" and "N" (minus quotes).
 
-The script in the `projector` folder is unfinished; it's meant to be a local implementation of the TBP. In the meantime, there is an [online version](http://projector.tensorflow.org), though it runs into issues with very large files, and it also limits the number of data points to 10,000 for t-SNE and 5,000 for UMAP.
+The script in the `projector` folder is unfinished; it's meant to be a local implementation of the TBP. In the meantime, there is an [online version](https://projector.tensorflow.org), though it runs into issues with very large files, and it also limits the number of data points to 10,000 for t-SNE and 5,000 for UMAP.

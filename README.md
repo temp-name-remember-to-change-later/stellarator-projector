@@ -1,12 +1,12 @@
-#stellarator-projector
+# stellarator-projector
 
 This is a script to convert [certain netCDF files](https://github.com/landreman/quasisymmetry) holding stellarator configuration data to .tsv and .csv files
 
-##Requirements
+## Requirements
 
 This script uses Python 3, as well as [`netCDF4-python`](https://unidata.github.io/netcdf4-python/netCDF4/index.html).
 
-##Usage
+## Usage
 
 To use the script, first `git checkout` this repository and download the specific netCDF files [here](https://umd.app.box.com/s/5102vf5ynh6o0fztph2jq6dt8alt795k).
 

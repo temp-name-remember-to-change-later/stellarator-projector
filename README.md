@@ -22,6 +22,6 @@ ds = nc.Dataset('../ncdata/quasisymmetry_out.20190105-01-012_nfp1_stellSym.nc');
 
 and uncomment them one at a time for each file.
 
-While the script is running, it will prompt you to pick whether you want to convert it to .csv or .tsv, and will ask whether or not you want to add a row with the data labels. To use the output file with the online TensorBoard Embedding Projector, type "tsv" and "N" (minus quotes).
+While the script is running, it will prompt you to pick whether you want to convert it to .csv or .tsv, and will ask whether or not you want to add a row with the data labels. To use the output file with the online TensorBoard Embedding Projector, type `tsv` and `N`.
 
 The script in the `projector` folder is unfinished; it's meant to be a local implementation of the TensorBoard Embedding Projector. In the meantime, there is an [online version](https://projector.tensorflow.org), though it runs into issues with very large files, and it also limits the number of data points to 10,000 for t-SNE and 5,000 for UMAP.
